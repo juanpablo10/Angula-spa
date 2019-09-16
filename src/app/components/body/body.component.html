@@ -1,0 +1,26 @@
+<div class="container">
+    <div id="carouselExampleSlidesOnly"  class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" >
+          <div class="carousel-item active" *ngFor="let item of imagenes">
+            <img class="d-block w-100" [src]=item.url width="200px" height="340">
+          </div>
+        </div>
+      </div>
+</div>
+<br>
+<div class="container">
+  
+    <div class="card-deck">
+      <div class="card mb-4" *ngFor="let item of imagenes">
+        <div class="card-header">
+          <img [src]="item.url" width="250px" height="240">
+        </div>
+        <div class="card-body">
+          <h3>parrafo</h3>
+          <p>lorwedjnsdnhjsdhsjdhjsdh</p>
+          <a class="btn peach-gradient">mas</a>
+        </div>
+      </div>
+    </div>
+  
+</div>
